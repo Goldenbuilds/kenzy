@@ -1,0 +1,5 @@
+Flask
+spotipy
+SpeechRecognition
+pyttsx3
+requests
