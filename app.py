@@ -5,6 +5,8 @@ from flask import Flask, render_template, request, jsonify
 import speech_recognition as sr
 import pyttsx3
 import winsound
+import sys
+
 
 app = Flask(__name__)
 
@@ -16,6 +18,9 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope='user-modify-playback-state user-read-playback-state'
 ))
 
+
+if sys.platform == "win32":
+    import winsound
 
 @app.route('/')
 def home():
