@@ -1,5 +1,7 @@
 Flask
-spotipy
-SpeechRecognition
-pyttsx3
+gunicorn
 requests
+speechrecognition
+pyttsx3
+spotipy
+Flask-Cors
