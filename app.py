@@ -19,8 +19,11 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
 ))
 
 
-if sys.platform == "win32":
+
+try:
     import winsound
+except ImportError:
+    from playsound import playsound
 
 @app.route('/')
 def home():
