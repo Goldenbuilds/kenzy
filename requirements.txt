@@ -5,3 +5,5 @@ speechrecognition
 pyttsx3
 spotipy
 Flask-Cors
+playsound
+
